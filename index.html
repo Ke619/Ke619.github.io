@@ -176,13 +176,7 @@ body::before{
 }
 .card-btn::before{content:'';}
 .card-btn:hover{background:var(--card-color,var(--pink));color:var(--bg);box-shadow:0 0 14px var(--card-color,var(--pink));}
-footer{
-  margin-top:2rem;font-family:'Press Start 2P',monospace;
-  font-size:0.34rem;color:rgba(255,240,255,0.2);
-  letter-spacing:0.1em;text-align:center;line-height:3;
-  padding:1.4rem 2rem;border-top:1px solid rgba(139,0,255,0.15);
-  width:100%;max-width:860px;
-}
+
 @media(max-width:560px){
   .title-main{font-size:clamp(1.7rem,11vw,2.8rem);}
   .cards-grid{grid-template-columns:1fr;}
@@ -261,32 +255,32 @@ footer{
 <section class="cards-section">
   <p class="cards-label">SELECT YOUR DESTINATION</p>
   <div class="cards-grid">
-    <div class="card card--pink" onclick="handleClick('INSERT_THESIS__HERE')">
+    <div class="card card--pink">
       <span class="card-num">01 / DOCUMENT</span>
       <span class="card-title">FULL THESIS</span>
       <p class="card-desc">The complete Master's thesis — three chapters, two case studies, survey analysis, and conclusion.</p>
       <a class="card-btn" href="INSERT_THESIS_LINK_HERE" target="_blank" rel="noopener" onclick="event.stopPropagation()">DOWNLOAD PDF</a>
     </div>
-    <div class="card card--cyan" onclick="handleClick('https://docs.google.com/spreadsheets/d/1om8VJ3j4wbyZdVAE0raC106fndkFcFTZYHygoxLWido/edit?usp=sharing')">
+    <div class="card card--cyan">
       <span class="card-num">02 / DATA</span>
       <span class="card-title">SURVEY RESULTS</span>
       <p class="card-desc">Full dataset from the 1,000-respondent player survey — all individual responses.</p>
       <a class="card-btn" href="https://docs.google.com/spreadsheets/d/1om8VJ3j4wbyZdVAE0raC106fndkFcFTZYHygoxLWido/edit?usp=sharing" target="_blank" rel="noopener" onclick="event.stopPropagation()">OPEN SPREADSHEET</a>
     </div>
-    <div class="card card--purple" onclick="handleClick('https://youtu.be/pWv5RYRHwXo')">
+    <div class="card card--purple">
       <span class="card-num">03 / GAME</span>
       <span class="card-title">HEDI VS EVIL</span>
       <p class="card-desc">The original first-person horror game built in Unreal Engine 5 as the proof of concept.</p>
       <a class="card-btn" href="https://youtu.be/pWv5RYRHwXo" target="_blank" rel="noopener" onclick="event.stopPropagation()">WATCH GAMEPLAY</a>
     </div>
-    <div class="card card--yellow" onclick="handleClick('https://docs.google.com/forms/d/e/1FAIpQLSdq9y_CZuPKJJs5gOuuWZn_08JL_pfqRbpcc410GcLvn6dIKw/viewform')">
+    <div class="card card--yellow">
       <span class="card-num">04 / SURVEY</span>
       <span class="card-title">ORIGINAL SURVEY</span>
       <p class="card-desc">View the original survey form — all fourteen questions as distributed to players.</p>
       <a class="card-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdq9y_CZuPKJJs5gOuuWZn_08JL_pfqRbpcc410GcLvn6dIKw/viewform" target="_blank" rel="noopener" onclick="event.stopPropagation()">VIEW FORM</a>
     </div>
   </div>
-  <footer>MOHAMED HEDI KECHICHE &nbsp;|&nbsp; 2026</footer>
+  
 </section>
 
 <script>
